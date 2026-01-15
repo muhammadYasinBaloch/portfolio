@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Expert Long Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Yasin Baloch  </div>
+        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="./resume.html">CV & Experience</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Design. Code. <span>Deploy.</span></h1>
+        <p>I am a Professional Frontend Architect specializing in building high-end, scalable, and fully responsive web applications for global clients.</p>
+        <div class="btn-group">
+            <a href="./resume.html" class="btn btn-cv"><i class="fas fa-file-download"></i> GET RESUME</a>
+            <a href="#projects" class="btn btn-work">VIEW PORTFOLIO</a>
+        </div>
+    </section>
+
+    <section class="section" id="services">
+        <div class="container">
+            <h2 class="section-title">What I <span>Offer</span></h2>
+            <div class="grid">
+                <div class="card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Building fast, SEO-friendly websites using React, Next.js, and modern CSS frameworks.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive UI</h3>
+                    <p>Your website will look stunning on every device, from mobile screens to 4K displays.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Performance</h3>
+                    <p>Optimizing load times and accessibility to ensure the best user experience possible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about" style="background: #0d1117;">
+        <div class="container">
+            <h2 class="section-title">My <span>Journey</span></h2>
+            <div class="grid">
+                <div class="card" style="background: var(--dark);">
+                    <h3 style="color: var(--primary);">Work Experience</h3>
+                    <p style="margin-top: 15px;"><strong>Senior Developer</strong> @ TechCorp (2022-2026)</p>
+                    <p>Led a team of 5 developers to build enterprise-level dashboards.</p>
+                </div>
+                <div class="card" style="background: var(--dark);">
+                    <h3 style="color: var(--primary);">Education</h3>
+                    <p style="margin-top: 15px;"><strong>Computer Science</strong> @ Global University</p>
+                    <p>Focused on Data Structures and Advanced Web Technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">My <span>Tech Stack</span></h2>
+            <div class="skills-wrap">
+                <div class="skill-item">HTML5</div>
+                <div class="skill-item">CSS3/SCSS</div>
+                <div class="skill-item">JavaScript (ES6)</div>
+                <div class="skill-item">React.js</div>
+                <div class="skill-item">Next.js</div>
+                <div class="skill-item">Tailwind CSS</div>
+                <div class="skill-item">Git & GitHub</div>
+                <div class="skill-item">Firebase</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Latest <span>Work</span></h2>
+            <div class="project-card">
+                <div class="project-img"></div>
+                <div class="project-info">
+                    <h3>AI Management Platform</h3>
+                    <p>An advanced AI-powered management tool with real-time data visualization and cloud storage integration.</p>
+                    <a href="#" style="color:var(--primary); font-weight:bold; text-decoration:none; margin-top:20px; display:block;">LIVE PREVIEW →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img" style="background: #1e293b;"></div>
+                <div class="project-info">
+                    <h3>NFT Marketplace UI</h3>
+                    <p>A dark-themed marketplace for digital assets with smooth animations and crypto-wallet connectivity.</p>
+                    <a href="#" style="color:var(--primary); font-weight:bold; text-decoration:none; margin-top:20px; display:block;">LIVE PREVIEW →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Ready to start a project?</h2>
+            <div class="social-box">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p style="color:#484f58;">&copy; 2026 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
