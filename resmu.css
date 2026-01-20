@@ -55,9 +55,16 @@ body {
     height: 100%;
     object-fit: cover; /* Photo crop ho kar fit ho jayegi */
 }
-
-.sidebar h1 { font-size: 1.4rem; margin-bottom: 5px; text-transform: uppercase; }
-.subtitle { font-size: 0.85rem; color: #3498db; font-weight: 600; }
+   
+.sidebar h1 {
+     font-size: 1.4rem;
+     margin-bottom: 5px;
+      text-transform: uppercase;
+     }
+.subtitle { font-size: 0.85rem;
+     color: #3498db;
+      font-weight: 600;
+     }
 
 .side-title {
     font-size: 1rem;
@@ -74,14 +81,21 @@ body {
     list-style: none;
 }
 
-.contact-info i { color: #3498db; margin-right: 10px; width: 15px; }
+.contact-info i { 
+    color: #3498db; 
+    margin-right: 10px;
+     width: 15px;
+     }
 
 /* Main Content Styling */
 .main-content {
     width: 65%;
     padding: 40px 50px;
 }
-
+#whatsap {
+    text-decoration: none;
+    color:#bdc3c7 ;
+}
 .main-title {
     font-size: 1.3rem;
     color: #2c3e50;
@@ -92,18 +106,39 @@ body {
     align-items: center;
 }
 
-.main-title i { margin-right: 10px; color: #3498db; }
+.main-title i {
+     margin-right: 10px;
+      color: #3498db;
+     }
 
-section { margin-bottom: 30px; }
+section {
+     margin-bottom: 30px;
+     }
 
-.exp-item { margin-bottom: 20px; }
-.exp-header { display: flex; justify-content: space-between; }
-.company { color: #3498db; font-weight: 600; margin-bottom: 5px; }
+.exp-item { 
+    margin-bottom: 20px; 
+}
+.exp-header {
+     display: flex; 
+     justify-content: space-between; 
+    }
+.company {
+     color: #3498db;
+      font-weight: 600;
+       margin-bottom: 5px;
+     }
 
-ul { margin-left: 18px; }
-ul li { font-size: 0.9rem; margin-bottom: 5px; color: #555; }
+ul { 
+    margin-left: 18px; 
+}
+ul li { 
+    font-size: 0.9rem; 
+    margin-bottom: 5px; 
+    color: #555;
+ }
 
 @media (max-width: 800px) {
-    .resume-container { flex-direction: column; width: 95%; }
+    .resume-container { flex-direction: column; 
+        width: 95%; }
     .sidebar, .main-content { width: 100%; }
 }
