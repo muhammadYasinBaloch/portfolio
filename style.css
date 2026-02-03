@@ -74,10 +74,10 @@
              width: 28px; 
              height: 3px;
               background: var(--primary); 
-              border-radius: 10px; 
+              border-radius: .10px; 
             }
 
-       
+     
         .hero {
             height: 100vh; 
             display: flex; 
